@@ -3,7 +3,7 @@ let data_m = [['2016-01', 45.21127196908602, 7904.155409946236, 12845.07, 5432.7
 let schema_m = [{
     "name": "Date",
     "type": "date",
-    "format": "%Y-%-m"
+    "format": "%Y-%m"
 }, {
     "name": "Price ($/MWh)",
     "type": "number"
@@ -23,7 +23,8 @@ let fusionTable_m = fusionDataStore_m.createDataTable(data_m, schema_m);
 
 var chartProfileVisit_m = new FusionCharts({
       type: 'timeseries',
-      renderAt: 'month',
+      renderAt: 'month-g',
+      id: "month-graph",
       width: "100%",
       height: 1500,
       dataSource: {
@@ -61,3 +62,16 @@ var chartProfileVisit_m = new FusionCharts({
     })
 
 chartProfileVisit_m.render()
+
+document.getElementById('btnradio1m').addEventListener('click', () => {
+  let yAxisInfo = FusionCharts.items["month-graph"].getYAxis();
+   yAxisInfo.plottype = "smooth-line"
+  FusionCharts.items["month-graph"].setYAxis(yAxisInfo);
+});
+
+document.getElementById('btnradio2m').addEventListener('click', () => {
+  let yAxisInfo = FusionCharts.items["month-graph"].getYAxis();
+  yAxisInfo.plottype = "column"
+  FusionCharts.items["month-graph"].setYAxis(yAxisInfo);
+});
+

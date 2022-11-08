@@ -3,7 +3,7 @@ let data_d = [['2016-01-01', 31.67656038194444, 4816.884027777778, 5788.78, 4064
 let schema_d = [{
     "name": "Date",
     "type": "date",
-    "format": "%Y-%-m-%-d"
+    "format": "%Y-%m-%d"
 }, {
     "name": "Price ($/MWh)",
     "type": "number"
@@ -23,7 +23,8 @@ let fusionTable_d = fusionDataStore_d.createDataTable(data_d, schema_d);
 
 var chartProfileVisit_d = new FusionCharts({
       type: 'timeseries',
-      renderAt: 'day',
+      renderAt: 'day-g',
+      id: "day-graph",
       width: "100%",
       height: 1500,
       dataSource: {
@@ -41,13 +42,19 @@ var chartProfileVisit_d = new FusionCharts({
                     exportFormats: "PNG|JPG|PDF|CSV",
                     exportShowMenuItem: "1"
                 },
+
         yaxis: {
           format: {
             round: "0",
             defaultFormat: 0
         },
-                    plottype: "smooth-line"
+                    plottype: "smooth-line",
+                    referenceLine: {
+                      label: "Max",
+                      value: 15500
+                    }
                 },
+
         xaxis: {
                   binning: {
                     year:[],
@@ -64,3 +71,15 @@ var chartProfileVisit_d = new FusionCharts({
     })
 
 chartProfileVisit_d.render()
+
+document.getElementById('btnradio1d').addEventListener('click', () => {
+  let yAxisInfo = FusionCharts.items["day-graph"].getYAxis();
+   yAxisInfo.plottype = "smooth-line"
+  FusionCharts.items["day-graph"].setYAxis(yAxisInfo);
+});
+
+document.getElementById('btnradio2d').addEventListener('click', () => {
+  let yAxisInfo = FusionCharts.items["day-graph"].getYAxis();
+  yAxisInfo.plottype = "column"
+  FusionCharts.items["day-graph"].setYAxis(yAxisInfo);
+});

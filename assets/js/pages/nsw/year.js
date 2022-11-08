@@ -23,7 +23,8 @@ let fusionTable_y = fusionDataStore_y.createDataTable(data_y, schema_y);
 
 var chartProfileVisit_y = new FusionCharts({
       type: 'timeseries',
-      renderAt: 'year',
+      renderAt: 'year-g',
+      id: "year-graph",
       width: "100%",
       height: 1500,
       dataSource: {
@@ -61,3 +62,15 @@ var chartProfileVisit_y = new FusionCharts({
     })
 
 chartProfileVisit_y.render()
+
+document.getElementById('btnradio1y').addEventListener('click', () => {
+  let yAxisInfo = FusionCharts.items["year-graph"].getYAxis();
+   yAxisInfo.plottype = "smooth-line"
+  FusionCharts.items["year-graph"].setYAxis(yAxisInfo);
+});
+
+document.getElementById('btnradio2y').addEventListener('click', () => {
+  let yAxisInfo = FusionCharts.items["year-graph"].getYAxis();
+  yAxisInfo.plottype = "column"
+  FusionCharts.items["year-graph"].setYAxis(yAxisInfo);
+});

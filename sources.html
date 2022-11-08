@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEPC Snapshot</title>
+    
+    <link rel="stylesheet" href="assets/css/main/app.css">
+    <link rel="shortcut icon" href="assets/images/logo/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/png">
+    
+<link rel="stylesheet" href="assets/css/shared/iconly.css">
+
+</head>
+
+<body>
+    <div id="app">
+        <div id="main" class="layout-horizontal">
+            <header class="mb-5">
+                <div class="header-top">
+                    <div class="container">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/images/logo/logo.jpg" alt="Logo">  VEPC Snapshot<span id="beta"> BETA</span></a>
+                        </div>
+                        <div class="header-top-right">
+                            <a href="https://www.facebook.com/VEPCENTRE/">
+                                <i class="bi bi-facebook" style="color: #435EBE"></i>
+                            </a>
+                            <a href="https://twitter.com/vepc_vu">
+                                <i class="bi bi-twitter" style="color: #435EBE"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCRUxTAPBO0LebQuND_fZerg/featured">
+                                <i class="bi bi-youtube" style="color: #435EBE"></i>
+                            </a>
+                            <a href="https://github.com/victoria-energy-policy-centre">
+                                <i class="bi bi-github" style="color: #435EBE"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <nav class="main-navbar">
+                    <div class="container">
+                        <ul>
+                            <li
+                                class="menu-item has-sub">
+                                <a class='menu-link'>
+                                    <span><i class="bi"></i>Regions</span>
+                                </a>
+                                <div class="submenu ">
+                                    <div class="submenu-group-wrapper">
+                                        <ul class="submenu-group">
+                                            <li
+                                                class="submenu-item  ">
+                                                <a href="vic.html"
+                                                    class='submenu-link'>Victoria</a>
+                                            </li>
+                                            <li
+                                                class="submenu-item  ">
+                                                <a href="nsw.html"
+                                                    class='submenu-link'>New South Wales</a>
+                                            </li>
+                                            <li
+                                                class="submenu-item  ">
+                                                <a href="qld.html"
+                                                    class='submenu-link'>Queensland</a>
+                                            </li>
+                                            <li
+                                                class="submenu-item  ">
+                                                <a href="sa.html"
+                                                    class='submenu-link'>South Australia</a>
+                                            </li>
+                                            <li
+                                                class="submenu-item  ">
+                                                <a href="tas.html"
+                                                    class='submenu-link'>Tasmania</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li
+                                class="menu-item">
+                                <a href="sources.html" class='menu-link'>
+                                    <span><i class="bi"></i>Sources</span>
+                                </a>
+                            </li>
+                            <li
+                                class="menu-item has-sub">
+                                <a class='menu-link'>
+                                    <span><i class="bi"></i>Interconnectors</span>
+                                </a>
+                                <div class="submenu ">
+                                    <div class="submenu-group-wrapper">
+                                        <ul class="submenu-group">
+                                            <li
+                                                class="submenu-item  ">
+                                                <a href="terranora.html"
+                                                    class='submenu-link'>Terranora</a>
+                                            </li>
+                                            <li
+                                                class="submenu-item  ">
+                                                <a href="nsw_qld.html"
+                                                    class='submenu-link'>NSW-QLD</a>
+                                            </li>
+                                            <li
+                                                class="submenu-item  ">
+                                                <a href="vic_nsw.html"
+                                                    class='submenu-link'>VIC-NSW</a>
+                                            </li>
+                                            <li
+                                                class="submenu-item  ">
+                                                <a href="basslink.html"
+                                                    class='submenu-link'>Basslink</a>
+                                            </li>
+                                            <li
+                                                class="submenu-item  ">
+                                                <a href="heywood.html"
+                                                    class='submenu-link'>Heywood</a>
+                                            </li>
+                                            <li
+                                                class="submenu-item  ">
+                                                <a href="murraylink.html"
+                                                    class='submenu-link'>Murraylink</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li
+                                class="menu-item">
+                                <a href="about.html" class='menu-link'>
+                                    <span><i class="bi"></i>About</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="content-wrapper container">
+                
+<div class="page-content">
+    <section class="list-group-navigation">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Price and Demand in Victoria</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-body">
+                            <div class="list-group list-group-horizontal-sm mb-1 text-center" role="tablist">
+                                <a class="list-group-item list-group-item-action active" id="thirty-list"
+                                    data-bs-toggle="list" href="#thirty" role="tab">30 Minutes</a>
+                                <a class="list-group-item list-group-item-action" id="day-list"
+                                    data-bs-toggle="list" href="#day" role="tab">Day</a>
+                                <a class="list-group-item list-group-item-action" id="month-list"
+                                    data-bs-toggle="list" href="#month" role="tab">Month</a>
+                                <a class="list-group-item list-group-item-action" id="quarter-list"
+                                    data-bs-toggle="list" href="#quarter" role="tab">Quarter</a>
+                                <a class="list-group-item list-group-item-action" id="year-list"
+                                    data-bs-toggle="list" href="#year" role="tab">Year</a>
+                            </div>
+                            <br style="line-height: 1px" />
+                            <div class="tab-content text-justify">
+                                <div class="tab-pane fade show active" id="thirty" role="tabpanel"
+                                    aria-labelledby="thirty-list">
+
+                                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group thirty">
+                                        <input type="radio" class="btn-check" name="btnradiot" id="btnradio1t" autocomplete="off" checked="checked">
+                                        <label class="btn btn-outline-primary" for="btnradio1t">Line</label>
+                                      
+                                        <input type="radio" class="btn-check" name="btnradiot" id="btnradio2t" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="btnradio2t">Bar</label>
+                                    </div>
+
+                                    <br><br>
+
+                                    <div id="thirty-g">
+
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="day" role="tabpanel"
+                                    aria-labelledby="day-list">
+
+                                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group day">
+                                        <input type="radio" class="btn-check" name="btnradiod" id="btnradio1d" autocomplete="off" checked="checked">
+                                        <label class="btn btn-outline-primary" for="btnradio1d">Line</label>
+                                      
+                                        <input type="radio" class="btn-check" name="btnradiod" id="btnradio2d" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="btnradio2d">Bar</label>
+                                    </div>
+
+                                    <br><br>
+
+                                    <div id="day-g">
+
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="month" role="tabpanel"
+                                    aria-labelledby="month-list">
+
+                                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group month">
+                                        <input type="radio" class="btn-check" name="btnradiom" id="btnradio1m" autocomplete="off" checked="checked">
+                                        <label class="btn btn-outline-primary" for="btnradio1m">Line</label>
+                                      
+                                        <input type="radio" class="btn-check" name="btnradiom" id="btnradio2m" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="btnradio2m">Bar</label>
+                                    </div>
+
+                                    <br><br>
+
+                                    <div id="month-g">
+
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="quarter" role="tabpanel"
+                                    aria-labelledby="quarter-list">
+
+                                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group quarter">
+                                        <input type="radio" class="btn-check" name="btnradioq" id="btnradio1q" autocomplete="off" checked="checked">
+                                        <label class="btn btn-outline-primary" for="btnradio1q">Line</label>
+                                      
+                                        <input type="radio" class="btn-check" name="btnradioq" id="btnradio2q" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="btnradio2q">Bar</label>
+                                    </div>
+
+                                    <br><br>
+
+                                    <div id="quarter-g">
+
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="year" role="tabpanel"
+                                    aria-labelledby="year-list">
+
+                                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group year">
+                                        <input type="radio" class="btn-check" name="btnradioy" id="btnradio1y" autocomplete="off" checked="checked">
+                                        <label class="btn btn-outline-primary" for="btnradio1y">Line</label>
+                                      
+                                        <input type="radio" class="btn-check" name="btnradioy" id="btnradio2y" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="btnradio2y">Bar</label>
+                                    </div>
+
+                                    <br><br>
+
+                                    <div id="year-g">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+            </div>
+
+            <footer>
+                <div class="container">
+                    <div class="footer clearfix mb-0 text-muted">
+                        <div class="float-start">
+                            <p>2022 &copy; <a
+                                href="https://vepc.org.au">Victoria Energy Policy Centre</a></p>
+                        </div>
+                        <div class="float-end">
+                            <p>Crafted with data from <a
+                                href="https://aemo.com.au">AEMO</a></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/pages/horizontal-layout.js"></script>
+    
+<script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+
+<script src="assets/js/pages/vic/thirty.js"></script>
+<script src="assets/js/pages/vic/day.js"></script>
+<script src="assets/js/pages/vic/month.js"></script>
+<script src="assets/js/pages/vic/quarter.js"></script>
+<script src="assets/js/pages/vic/year.js"></script>
+
+</body>
+
+</html>

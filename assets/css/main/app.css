@@ -2521,8 +2521,8 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-check-input:checked {
-  background-color: #435ebe;
-  border-color: #435ebe;
+  background-color: #e6526d;
+  border-color: #e6526d;
 }
 .form-check-input:checked[type="checkbox"] {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3E%3C/svg%3E");
@@ -2554,7 +2554,8 @@ textarea.form-control-lg {
   border-radius: 2em;
   margin-left: -2.5em;
   transition: background-position 0.15s ease-in-out;
-  width: 2em;
+  width: 3em;
+  height: 2em;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-switch .form-check-input {
