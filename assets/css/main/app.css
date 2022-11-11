@@ -17934,5 +17934,10 @@ a {
 
 #beta {
   color: #e6526d;
-  font-size: 13px;
+  font-size: 8px;
+}
+
+#terms {
+  color: #435ebe;
+  font-size: 16px;
 }
